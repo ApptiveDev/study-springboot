@@ -20,6 +20,7 @@ public class Car {
     }
 
     //매개변수가 4개인 생성자
+    //민기님 여기 구현햇습니다!
     public Car(String make, String model, int year,int speed) {
         this.make = make;
         this.model = model;

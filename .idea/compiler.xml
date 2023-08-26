@@ -10,5 +10,19 @@
         <module name="생성자와_메서드.assignment01.main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="assignment01" target="17" />
+      <module name="assignment01.main" target="17" />
+      <module name="assignment01.test" target="17" />
+      <module name="com.example.assignment01" target="17" />
+      <module name="com.example.assignment01.main" target="17" />
+      <module name="com.example.assignment01.test" target="17" />
+      <module name="example.생성자와_메서드.assignment01" target="17" />
+      <module name="example.생성자와_메서드.assignment01.main" target="17" />
+      <module name="example.생성자와_메서드.assignment01.test" target="17" />
+      <module name="생성자와_메서드.assignment01" target="17" />
+      <module name="생성자와_메서드.assignment01.main" target="17" />
+      <module name="생성자와_메서드.assignment01.test" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

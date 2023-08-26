@@ -10,16 +10,20 @@ public class Assignment01Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Assignment01Application.class, args);
 		// 인스턴스 생성
-		Car myCar = new Car("Hyundai", "G80", 2022);
+		Car myCar0 = new Car("Hyundai", "G80", 2022);
 		// 메서드 호출
-		myCar.displayInfo();
-		myCar.accelerate();
-		myCar.brake();
+		myCar0.displayInfo();
+		myCar0.accelerate();
+		myCar0.brake();
 
-		Car car100 = new Car("Hyundai", "G80", 2022);
-		car100.setSpeed(100);
-		System.out.println(car100.getSpeed());
+		Car myCar1 = new Car("Hyundai", "G80", 2022);
 
-		car100.emergencyBrake();
+		myCar1.setSpeed(100);
+		System.out.println(myCar1 .getSpeed());
+		myCar1.emergencyBrake();
+
+		Car myCar2  = new Car("Hyundai", "G80", 2022,200);
+		myCar2.displayInfo();
+
 	}
 }
