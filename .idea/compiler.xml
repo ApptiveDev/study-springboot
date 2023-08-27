@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.28/a2ff5da8bcd8b1b26f36b806ced63213362c6dcc/lombok-1.18.28.jar" />
+        </processorPath>
+        <module name="example.생성자와_메서드.assignment01.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="assignment01" target="17" />
+      <module name="assignment01.main" target="17" />
+      <module name="assignment01.test" target="17" />
+      <module name="com.example.assignment01" target="17" />
+      <module name="com.example.assignment01.main" target="17" />
+      <module name="com.example.assignment01.test" target="17" />
+      <module name="example.생성자와_메서드.assignment01" target="17" />
+      <module name="example.생성자와_메서드.assignment01.main" target="17" />
+      <module name="example.생성자와_메서드.assignment01.test" target="17" />
+      <module name="생성자와_메서드.assignment01" target="17" />
+      <module name="생성자와_메서드.assignment01.main" target="17" />
+      <module name="생성자와_메서드.assignment01.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
