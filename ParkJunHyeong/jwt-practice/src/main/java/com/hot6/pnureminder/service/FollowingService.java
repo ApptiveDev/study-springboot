@@ -37,8 +37,9 @@ public class FollowingService {
 
         Member followerMember = follower.get();
         Member followingMember = following.get();
-
-
+        if(followerMember.getMemberFollower() == null) {
+            throw new Exception("getMemberFollower 에러");
+        }
         if (followerMember.getMemberFollower().getFollowerList() == null) {
             followerMember.getMemberFollower().getFollowerList().add(followingMember);
         }
@@ -49,6 +50,9 @@ public class FollowingService {
             throw new Exception("이미 팔로우하고 있는 멤버입니다.");
         }
 
+        if(followingMember.getMemberFollowing() == null) {
+            throw new Exception("getMemberFollowing 에러");
+        }
         if (followingMember.getMemberFollowing().getFollowingList() == null) {
             followingMember.getMemberFollowing().getFollowingList().add(followerMember);
         }
