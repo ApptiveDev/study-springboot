@@ -8,7 +8,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class FollowDto {
-    Long userId;
-    String userName;
+    private Long followingId;
+    private Long followerId;
 }
 

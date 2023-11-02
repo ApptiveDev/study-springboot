@@ -48,8 +48,6 @@ public class AuthService {
 
         Member member = memberRequestDto.toMember(passwordEncoder);
         member.setRoles(Collections.singleton(userRole));
-        member.setMemberFollower(member);
-        member.setMemberFollowing(member);
             return MemberResponseDto.toDto(memberRepository.save(member));
 
     }

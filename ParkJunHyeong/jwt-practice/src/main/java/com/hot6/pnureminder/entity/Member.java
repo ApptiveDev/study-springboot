@@ -38,19 +38,13 @@ public class Member implements UserDetails {
     @Column(name = "findAnswer")
     private String findAnswer;
 
-    @ManyToOne
-    @JoinColumn
-    private Member memberFollowing = this;
+    @OneToMany(mappedBy = "followerMember")
+    private List<Follow> followerList = new ArrayList<Follow>();
 
-    @ManyToOne
-    @JoinColumn
-    private Member memberFollower = this;
-    // follwing = 내가 따르는 member
-    @OneToMany(mappedBy = "memberFollowing")
-    private List<Member> followingList = new ArrayList<Member>();
-    //follwerList = 나를 따르는 meber
-    @OneToMany(mappedBy = "memberFollower")
-    private List<Member> followerList = new ArrayList<Member>();
+
+    @OneToMany(mappedBy = "followingMember")
+    private List<Follow> followingList = new ArrayList<Follow>();
+
 
     @ManyToOne
     @JoinColumn

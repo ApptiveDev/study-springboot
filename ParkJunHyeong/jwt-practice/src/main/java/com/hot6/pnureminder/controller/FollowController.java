@@ -24,8 +24,11 @@ public class FollowController {
     @PostMapping("/{followedId}")
     public ResponseEntity<FollowAddResponseDto> addFollow (@PathVariable Long followedId, Principal principal) throws Exception {
         Optional<Member> follwedMember = memberRepository.findById(followedId);
-        String follwedUsername = follwedMember.get().getUsername();
-        return ResponseEntity.ok(followingService.addFollow(follwedUsername, principal.getName()));
+        if (follwedMember.isEmpty()) {
+            throw new Exception("followedMember를 찾을 수 없습니다.");
+        }
+        String followedUsername = follwedMember.get().getUsername();
+        return ResponseEntity.ok(followingService.addFollow(followedUsername, principal.getName()));
     }
 
     @GetMapping("/followingList")

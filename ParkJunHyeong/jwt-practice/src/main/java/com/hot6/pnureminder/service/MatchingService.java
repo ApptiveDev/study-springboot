@@ -24,12 +24,14 @@ public class MatchingService {
         if(matching1.isPresent() || matching2.isPresent()) {
             throw new Exception("이미 존재하는 매칭입니다.");
         }
-
+        System.out.println("----------------- 매칭 시작");
         Matching matching =  Matching.builder()
                 .member1(member1.getId())
                 .member2(member2.getId())
                 .build();
+        System.out.println("----------------- 매칭 세이브 직전");
         matchingRepository.save(matching);
+        System.out.println("----------------- 매칭 세이브 후");
         member1.getMatching().getMatchingList().add(member2);
         member2.getMatching().getMatchingList().add(member1);
     }
